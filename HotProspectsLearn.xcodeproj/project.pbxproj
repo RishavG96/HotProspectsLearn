@@ -11,6 +11,7 @@
 		BD7702B52A4A7C79008CEC53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7702B42A4A7C79008CEC53 /* ContentView.swift */; };
 		BD7702B72A4A7C7A008CEC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7702B62A4A7C7A008CEC53 /* Assets.xcassets */; };
 		BD7702BA2A4A7C7A008CEC53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7702B92A4A7C7A008CEC53 /* Preview Assets.xcassets */; };
+		BD7702C22A4B474B008CEC53 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = BD7702C12A4B474B008CEC53 /* SamplePackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7702C22A4B474B008CEC53 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HotProspectsLearn;
+			packageProductDependencies = (
+				BD7702C12A4B474B008CEC53 /* SamplePackage */,
+			);
 			productName = HotProspectsLearn;
 			productReference = BD7702AF2A4A7C79008CEC53 /* HotProspectsLearn.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BD7702A62A4A7C79008CEC53;
+			packageReferences = (
+				BD7702C02A4B474B008CEC53 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = BD7702B02A4A7C79008CEC53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD7702C02A4B474B008CEC53 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD7702C12A4B474B008CEC53 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD7702C02A4B474B008CEC53 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BD7702A72A4A7C79008CEC53 /* Project object */;
 }
